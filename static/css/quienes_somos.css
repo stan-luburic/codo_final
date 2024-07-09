@@ -1,0 +1,35 @@
+
+
+h1 {
+    margin: 30px;;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 15px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: solid 1px #0056b3;
+    padding: 20px;
+    margin:  20px auto;
+    transition: background 0.5s linear;
+    
+}
+
+section:hover{
+    background:  #4DABFF;
+    color:#F5F5F5
+}
+
+
+
+
+
