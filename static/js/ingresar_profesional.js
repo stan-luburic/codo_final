@@ -2,9 +2,9 @@ function guardar() {
     let nombre_ingresado = document.getElementById("nombre").value //input
     let apellido_ingresado = document.getElementById("apellido").value 
     let especialidad_ingresada = document.getElementById("especialidad").value 
-    let imagen_ingresada = document.getElementById("imagen").value 
+    let imagen_ingresada = document.getElementById("imagen").value
 
-    console.log(nombre_ingresado,apellido_ingresado,especialidad_ingresada,imagen_ingresada);
+    console.log(nombre_ingresado,apellido_ingresado,especialidad_ingresada,imagen_ingresada,genero_ingresado);
     // Se arma el objeto de js 
     let datos = {
         nombre: nombre_ingresado,

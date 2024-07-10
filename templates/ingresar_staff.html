@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -49,13 +49,9 @@
     <main>
         <!--Seccion de bienenida-->
         <section class="bienvenida">
-            <h1>Modificar registro</h1>
+            <h1>Ingreso de profesionales</h1>
             <!--Seccion de ingreso de profesionales-->
             <form action="">
-                <div>
-                    <label for="id">ID</label>
-                    <input type="number" name="id" id="id" disabled>
-                </div>
                 <div class="entrada">
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre">
@@ -66,9 +62,9 @@
                 </div>
                 <!-- <fieldset>
                     <div class="entrada">
-                        <input type="radio" id="dr" name="genero" value="Dr." />
+                        <input type="radio" id="genero" name="genero" value="Dr." />
                         <label for="dr">Dr.</label>
-                        <input type="radio" id="dra" name="genero" value="Dra." />
+                        <input type="radio" id="genero" name="genero" value="Dra." />
                         <label for="dra">Dra.</label>
                     </div>
                 </fieldset> -->
@@ -86,7 +82,7 @@
                     <input type="text" name="imagen" id="imagen">
                 </div>
                 <div class="entrada">
-                    <button class="modificar" type="button" onclick="modificar()">Modificar</button>
+                    <button class="modificar" type="button" onclick="guardar()">Guardar</button>
                 </div>
             </form>
         </section>
@@ -127,7 +123,6 @@
         </div>
     </footer>
     <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.prod.js"></script>
-    <script src="../static/js/edicion.js"></script>
     <script src="../static/js/ingresar_profesional.js"></script>
     <script src="../static/js/tabla_profesionales.js"></script>
 </body>

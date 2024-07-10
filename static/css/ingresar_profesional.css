@@ -16,7 +16,7 @@
 form{
     /*background-color: #001F3F;*/
     width: 30vw;
-    height: 50vh;
+    /*height: 50vh;*/
     border-radius: 3vw;
     display: flex;
     flex-direction: column;
