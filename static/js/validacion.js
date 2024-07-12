@@ -33,8 +33,6 @@ function validarDatos(){
         error.style.color = "brown"
         return false
     }
-
-    
     
     // Si todas las validaciones son exitosas, informar
     alert("Consulta enviada correctamente.")
