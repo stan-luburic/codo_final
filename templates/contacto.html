@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/202b86d8b1.js" crossorigin="anonymous"></script>
-
 </head>
-
 <body>
-
     <!-- Encabezado -->
     <header>
-
         <nav>
             <!-- Logo -->
             <div>
                 <a href="../index.html" id="logo"><img src="../static/img/logo4.png" alt="logo de Policonsultorio">Policonsultorio CAC</a>
             </div>
-
             <!-- hipervínculos del menú -->
             <ul class="nav-links">
                 <li><a href="../index.html">Inicio</a></li>
@@ -36,46 +30,35 @@
                 <li><a href="../templates/contacto.html">Contacto</a></li>      
             </ul>
         </nav>
-
     </header>
-
     <!-- Contenido -->
     <main>
         <!--Seccion de bienenida-->
         <section class="bienvenida">
             <h1>CONTACTO</h1>
-            <h2>Formulario de registro</h2>
         </section>
-    
-    <form id="formulario" onsubmit="return validarDatos()">
-        <label for="nombre">Primer Nombre:</label>
+    <form id="formulario" method="POST" action="https://codogrupo22.pythonanywhere.com/contacto" onsubmit="return validarDatos()">
+        <label for="nombre">Nombre y Apellido:</label>
         <input type="text" id="nombre" name="nombre" required><br>
-        
         <label for="dni">DNI:</label>
-        <input type="number" id="dni" name="dni" required><br>
-
-        <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" name="direccion" required><br>
-
-        <label for="estudios">Consulta:</label>
-        <select id="estudios" name="estudios" required>
-            <option value="traumatologia">Traumatologia</option>
+        <input type="text" id="dni" name="dni" required><br>
+        <label for="especialidad">Especialidad:</label>
+        <select id="especialidad" name="especialidad" required>
+            <option value=""></option>"
+            <option value="clinica">Clinica Medica</option>
+            <option value="cirugia">Cirugia General</option>
+            <option value="pediatria">Pediatria</option> 
             <option value="ginecologia">Ginecologia</option>
-            <option value="clinica">Clinica</option>
-            <option value="alergia">Alergia</option>
+            <option value="dermatologia">Dermatologia</option>
+            <option value="cardiologia">Cardiologia</option>
+            <option value="neumonologia">Neumonologia</option>
         </select>
-
-        <p>Género
-            <input type="radio" name="gender" value="hombre" checked>Hombre
-            <input type="radio" name="gender" value="Mujer">Mujer
-            <input type="radio" name="gender" value="Otro"> Otro
-        </p>
-
+        <label for="consulta">Consulta:</label>
+        <textarea type="text" id="consulta" name="consulta"  rows= "5" cols="4" required></textarea><br>
+        <p id="campos" class="error-message"></p>
         <input type="submit" value="Enviar">
     </form>
-
 </main>
-
     <footer>
         <!-- Informacion de contacto-->
         <div class="footer-superior">
@@ -105,6 +88,6 @@
             <p>Copyright © 2024 - Poloconsultorio CAC- Fullstack Python</p>
         </div>
     </footer>
-
+    <script src="../static/js/validacion.js"></script>
 </body>
 </html>

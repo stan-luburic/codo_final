@@ -4,7 +4,7 @@ function guardar() {
     let especialidad_ingresada = document.getElementById("especialidad").value 
     let imagen_ingresada = document.getElementById("imagen").value
 
-    console.log(nombre_ingresado,apellido_ingresado,especialidad_ingresada,imagen_ingresada,genero_ingresado);
+    console.log(nombre_ingresado,apellido_ingresado,especialidad_ingresada,imagen_ingresada);
     // Se arma el objeto de js 
     let datos = {
         nombre: nombre_ingresado,
@@ -74,4 +74,8 @@ function modificar() {
             console.error(err);
             alert("Error al Modificar")
         })      
+}
+
+function autenticar(){
+    let aut = window.prompt("ingrese contraseña");
 }
